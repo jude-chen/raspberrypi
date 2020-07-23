@@ -8,7 +8,7 @@
     sudo apt-get update
 ```
 
-    If you see `E: The repository 'http://ppa.launchpad.net/ubuntu-raspi2/ppa/ubuntu focal Release' does not have a Release file.` error message, which means the first ppa repository does not have focal releases yet, change it to the last release version.
+If you see `E: The repository 'http://ppa.launchpad.net/ubuntu-raspi2/ppa/ubuntu focal Release' does not have a Release file.` error message, which means the first ppa repository does not have focal releases yet, change it to the last release version.
 
 ```bash
     sudo sed -i "s/focal/bionic/g" /etc/apt/sources.list.d/ubuntu-raspi2-ubuntu-ppa-focal.list
